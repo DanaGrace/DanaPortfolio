@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>How to Contact Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+  
+body {
+  background-image: url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130560.jpg&fm=jpg');
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align:right;
+}
+
+#navbar :hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+  
+li {
+  display:inline-block
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #9848A8;
+  text-align: center;
+  padding: 14px 55px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+
+#main{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    color: white;
+    margin-top: 125px;
+}
+
+.fa {
+    color:white;
+    font-size: 50px;
+    margin: 15px;
+}
+
+
+
+
+
+</style>
+<body>
+
+
+<!-- NAVIGATION BAR -->
+<ul id="navbar">
+  <!-- Home-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'my_portfolio' %}">Home</a></li></span>
+  <!-- About Me-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'home' %}">About</a></li></span>
+  <!-- Projects-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'project_skills' %}">Projects and Skills</a></li></span>
+  <!-- DEVELOPER'S PROFILE -->
+  <span class="nav_buttons">
+  <li><a href="{% url 'contact' %}">Contact</a></li></span> 
+</ul>
+
+
+<div id="main">
+    <h1> Contact Me:</h1>
+    <script defer="" src="/_vercel/insights/script.js"></script>
+    <a href="https://www.linkedin.com/in/dana-grace-fulla-a51647172/" target="_blank" data-toggle="tooltip" title="LinedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+    <a href="https://github.com/DanaGrace" target="_blank" data-toggle="tooltip" title="Git Hub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+    <a href="https://mail.google.com/mail/u/0/?fs=1&to=danafulla0@gmail.com&tf=cm" target="_blank" data-toggle="tooltip" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="viber://add?number=639763280065" target="_blank" data-toggle="tooltip" title="Viber"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+
+</div>
+
+
+
+</body>
+</html>

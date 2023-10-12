@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Welcome to my Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script defer="" src="/_vercel/insights/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+  
+body {
+  background-image: url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130560.jpg&fm=jpg');
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align:right;
+}
+
+#navbar :hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+  
+li {
+  display:inline-block
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #9848A8;
+  text-align: center;
+  padding: 14px 55px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+
+img{
+  width: 400px;
+  height:400px;
+  vertical-align: center;
+  display: relative;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+
+
+.cont1 {
+ 
+  margin-top: 75px;
+  
+}
+
+#message {
+  text-align: center;
+  vertical-align: center;
+}
+
+h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: #000053;
+}
+
+h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 100px;
+  color: #40348E;
+}
+
+p2 {
+  font-size: 25px;
+  color:#4056A7;
+}
+
+</style>
+<body>
+
+<!-- Home Page-->
+
+<!-- NAVIGATION BAR -->
+<ul id="navbar">
+  <!-- Home-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'my_portfolio' %}">Home</a></li></span>
+  <!-- About Me-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'home' %}">About</a></li></span>
+  <!-- Projects-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'project_skills' %}">Projects and Skills</a></li></span>
+  <!-- DEVELOPER'S PROFILE -->
+  <span class="nav_buttons">
+  <li><a href="{% url 'contact' %}">Contact</a></li></span> 
+</ul>
+
+</ul>
+<div class="container cont1"> 
+  <div class="row">
+    <div class="col-md-4" >
+      <img src="{% static "images\profile.png" %}">
+    </div>
+
+    <div class="col-md-8" id="message">
+      <h1>HELLO, I'M</h1>
+      <h3><em> Dana Grace Fulla</em></h3>
+      <a href="{% url 'home' %}"><p2> Get to know me more...</p2></a>
+    </div>
+  </div>
+</div>
+
+<!-- About Page-->
+
+<!-- projation Background-->
+
+<!-- Skills Background-->
+
+<!-- Project Background-->
+
+<!-- Contact Info-->
+
+</body>
+</html>

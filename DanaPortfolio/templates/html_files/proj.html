@@ -1,0 +1,162 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script defer="" src="/_vercel/insights/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+  
+body {
+  background-image: url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130560.jpg&fm=jpg');
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align:right;
+}
+
+#navbar :hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+  
+li {
+  display:inline-block
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #9848A8;
+  text-align: center;
+  padding: 14px 55px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #9848A8; 
+}
+#proj {
+  
+  
+}
+#proj2{
+  margin-top:30px;
+  margin-bottom:30px ;
+}
+#pcss{
+  text-align: right;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  color: #000053;
+}
+
+h1{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000053;
+}
+
+a {
+  color:#4056A7;
+}
+
+</style>
+<body width="100%">
+
+
+<!-- NAVIGATION BAR -->
+<ul id="navbar">
+  <!-- Home-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'my_portfolio' %}">Home</a></li></span>
+  <!-- About Me-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'home' %}">About</a></li></span>
+  <!-- Projects-->
+  <span class="nav_buttons">
+  <li><a href="{% url 'project_skills' %}">Projects and Skills</a></li></span>
+  <!-- DEVELOPER'S PROFILE -->
+  <span class="nav_buttons">
+  <li><a href="{% url 'contact' %}">Contact</a></li></span> 
+</ul>
+
+<h1><b>Previous Projects</b></h1>
+
+<div class="container" id="proj">
+  <div class="row">
+      <div class="col-sm-5">
+        <img src="{% static "images/pcss.png" %}" id="pic"width="100%" 
+        height="100%"/>
+      </div>
+      <div class="col-sm-7" id="pcss">
+        <h2><b>Personal Collection Sales System</b></h2>
+        <h4>(Desktop Application)</h4>
+        <p3> A system that serve as a cashier but it is not the same as any ordinary cashier system for which it offers discounts
+          to verfied customers that are member e.g. reseller of the brands. It also has an inventory sytem inluded for easy tracking of stocks
+          of every product as well as an update of prices.
+        </p3><br>
+        <p3>
+          This System used Python for the GUI via Pyqt5 and Mysql in DBMS.
+        </p3><br>
+        <b><p1><a href="https://github.com/DanaGrace/PCSalesSystem.git" target="_blank">See code...</a></p1></b>
+
+
+      </div>
+  </div>
+</div>
+
+<div class="container" id="proj2">
+  <div class="row">
+      <div class="col-sm-5">
+        <h2><b>TUPC Request Credential System</b></h2>
+        <h4>(Web Application)</h4>
+        <p3>
+          A systems exlcusive for the requesting of credentials at Technological Univesity of the Philippines-Cavite. Aims for an effiencient management and processing of forms form 
+          requesting at the Registrar's Office, signing of faculty up to notifying of applicants for claiming of the requested credentials at the university.
+        </p3><br>
+        <p3> Used HTML, CSS, Bootstrap, Javascript, jQuery for the front-end and Python Django and Mysql for the Backend.</p3><br>
+        <b><p1><a href="https://tupcaviteregistrar.site/" target="_blank">Visit Site...</a></p1></b>
+
+      </div>
+      <div class="col-sm-7" id="webapp">
+
+        <img src="{% static "images/webapp.png" %}" id="pic"width="100%" 
+        height="100%"/>
+      </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
